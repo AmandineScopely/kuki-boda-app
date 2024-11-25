@@ -8,7 +8,9 @@ import * as z from 'zod';
 import { Button, ControlledInput, Text, View } from '@/components/ui';
 
 const schema = z.object({
-  name: z.string().optional(),
+  name: z.string({
+    required_error: 'Name is required',
+  }),
   email: z
     .string({
       required_error: 'Email is required',
@@ -25,9 +27,10 @@ export type FormType = z.infer<typeof schema>;
 
 export type LoginFormProps = {
   onSubmit?: SubmitHandler<FormType>;
+  loading?: boolean;
 };
 
-export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
+export const LoginForm = ({ onSubmit = () => {}, loading }: LoginFormProps) => {
   const { handleSubmit, control } = useForm<FormType>({
     resolver: zodResolver(schema),
   });
@@ -74,6 +77,7 @@ export const LoginForm = ({ onSubmit = () => {} }: LoginFormProps) => {
           secureTextEntry={true}
         />
         <Button
+          loading={loading}
           testID="login-button"
           label="Login"
           onPress={handleSubmit(onSubmit)}
