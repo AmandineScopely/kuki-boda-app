@@ -1,3 +1,19 @@
+# Personal notes
+
+## Installed packages
+
+```
+npx expo install firebase at 2024-11-25 09:46
+```
+
+## To hide an icon from the tab bar
+
+Change the hiddenTabbarButtons value in app/(tabs)/\_layout.tsx.
+
+## To change the colors
+
+Modify the export default object in constants/Colors.ts.
+
 <p align="center">
     <img alt="React Native Template Obytes" src="https://github.com/obytes/react-native-template-obytes/assets/11137944/a8163d23-897a-4efe-91ce-b9bf7348c18f" width="200" />
 </p>
