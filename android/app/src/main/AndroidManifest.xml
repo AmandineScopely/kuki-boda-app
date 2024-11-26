@@ -27,6 +27,9 @@
         <data android:scheme="obytesApp"/>
         <data android:scheme="com.obytes.development"/>
         <data android:scheme="exp+obytesapp"/>
+        <data android:scheme="KukiBodaApp"/>
+        <data android:scheme="com.kukiboda.development"/>
+        <data android:scheme="exp+kukibodaapp"/>
       </intent-filter>
     </activity>
   </application>

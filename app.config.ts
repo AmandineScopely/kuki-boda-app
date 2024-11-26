@@ -39,7 +39,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ios: {
     supportsTablet: true,
     bundleIdentifier: Env.BUNDLE_ID,
-    'googleServicesFile': './GoogleService-Info.plist'
+    //'googleServicesFile': './GoogleService-Info.plist'
   },
   experiments: {
     typedRoutes: true,
