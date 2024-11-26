@@ -13,6 +13,18 @@ const auth = initializeAuth(app, {
 persistence: getReactNativePersistence(ReactNativeAsyncStorage)
 });
 
+## Steps to make changes to this repository
+
+git pull
+git checkout -b new_branch
+Make developments
+git add .
+git commit -m "Comments"
+go to master branch
+git pull
+git merge new_branch
+run "pnpm prebuild" to generate native code
+
 ## Installed packages
 
 ```
