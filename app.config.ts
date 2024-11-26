@@ -39,6 +39,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ios: {
     supportsTablet: true,
     bundleIdentifier: Env.BUNDLE_ID,
+    //https://medium.com/@kamotomo/how-to-implement-firebase-auth-on-expo-using-context-api-91fc94a15c52
     //'googleServicesFile': './GoogleService-Info.plist'
   },
   experiments: {
@@ -50,6 +51,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
       backgroundColor: '#ffffff',
     },
     package: Env.PACKAGE,
+    //https://medium.com/@kamotomo/how-to-implement-firebase-auth-on-expo-using-context-api-91fc94a15c52
     //'googleServicesFile': './google-services.json',
   },
   web: {
