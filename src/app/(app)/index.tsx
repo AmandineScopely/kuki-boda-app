@@ -35,6 +35,7 @@ export default function App() {
     );
   }*/
 
+  //const user = auth.currentUser;
 
   const colorScheme: 'light' | 'dark' | undefined = useColorScheme().colorScheme;
   const styles = styling(colorScheme);

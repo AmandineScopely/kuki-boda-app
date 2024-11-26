@@ -4,12 +4,14 @@ import React, { useState } from 'react';
 import type { LoginFormProps } from '@/components/login-form';
 import { LoginForm } from '@/components/login-form';
 import { FocusAwareStatusBar } from '@/components/ui';
-import { useAuth } from '@/lib';
-import { signup } from '@/lib/auth';
+import { signInWithFirebase, signUpWithFirebase, useAuth } from '@/lib';
 
 export default function Login() {
   const router = useRouter();
   const signIn = useAuth.use.signIn();
+  const signUp = useAuth.use.signUp();
+
+  const signType: 'signIn' | 'signUp' = 'signIn'
 
   const [loading, setLoading] = useState(false);
 
@@ -17,7 +19,16 @@ export default function Login() {
     setLoading(true);
 
     try {
-      await signup(data);
+      let user = signType === 'signIn' ? await signInWithFirebase(data) : await signUpWithFirebase(data);
+      let token = await user.getIdToken();
+      if (signType === 'signIn') {
+        signIn({ access: token });
+      }
+      else {
+        signUp({ access: token });
+      }
+      console.log('User ', user.uid, ' has ' + signType + ' with email: ', user.email, ' and his token is: ', token);
+      router.push('/');
     } catch (error: any) {
       setLoading(false);
       if (error.code === 'auth/email-already-in-use') {
@@ -29,14 +40,11 @@ export default function Login() {
       }
     }
 
-    console.log(data);
-    signIn({ access: 'access-token', refresh: 'refresh-token' });
-    router.push('/');
   };
   return (
     <>
       <FocusAwareStatusBar />
-      <LoginForm onSubmit={onSubmit} loading={loading} />
+      <LoginForm onSubmit={onSubmit} loading={loading} signType={signType} />
     </>
   );
 }

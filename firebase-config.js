@@ -11,7 +11,7 @@ import { getFirestore } from 'firebase/firestore';
 
 // Initialize Firebase
 export const firebaseConfig = {
-  apiKey: 'AIzaSyAlYRLHtg5RrCwBvqE4lNUixIJr5IIAnmk',
+  apiKey: process.env.FIREBASE_API_KEY,
   authDomain: 'kuki-boda.firebaseapp.com',
   databaseURL: 'https://kuki-boda.firebaseio.com',
   projectId: 'kuki-boda',
