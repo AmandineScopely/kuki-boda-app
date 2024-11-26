@@ -29,6 +29,7 @@ run "pnpm prebuild" to generate native code
 
 ```
 npx expo install firebase at 2024-11-25 09:46
+npx expo install expo-linear-gradient at 2024-11-26 16:35
 ```
 
 ## To hide an icon from the tab bar

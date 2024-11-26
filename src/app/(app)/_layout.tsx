@@ -35,10 +35,10 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Feed',
+          title: 'Home',
           tabBarIcon: ({ color }) => <FeedIcon color={color} />,
           headerRight: () => <CreateNewPostLink />,
-          tabBarButtonTestID: 'feed-tab',
+          tabBarButtonTestID: 'home-tab',
         }}
       />
 
@@ -68,7 +68,7 @@ const CreateNewPostLink = () => {
   return (
     <Link href="/feed/add-post" asChild>
       <Pressable>
-        <Text className="px-3 text-primary-300">Create</Text>
+        <Text className="px-3 text-primary-300">Button Example</Text>
       </Pressable>
     </Link>
   );
