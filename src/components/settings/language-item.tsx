@@ -23,6 +23,8 @@ export const LanguageItem = () => {
     () => [
       { label: translate('settings.english'), value: 'en' },
       { label: translate('settings.arabic'), value: 'ar' },
+      { label: translate('settings.spanish'), value: 'es' },
+      { label: translate('settings.french'), value: 'fr' },
     ],
     [],
   );

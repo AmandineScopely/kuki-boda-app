@@ -1,0 +1,35 @@
+{
+  "onboarding": {
+    "message": "Bienvenidos en el sitio web de Obytes"
+  },
+  "settings": {
+    "about": "Acerca",
+    "app_name": "Nombre de l'App",
+    "arabic": "Arabic",
+    "english": "Inglès",
+    "french": "Francès",
+    "generale": "General",
+    "github": "Github",
+    "language": "Idioma",
+    "links": "Enlaces",
+    "logout": "Desconectar",
+    "more": "Más",
+    "privacy": "Política de privacidad",
+    "rate": "Notar",
+    "share": "Compartir",
+    "spanish": "Español",
+    "support": "Soporte",
+    "support_us": "Apóyanos",
+    "terms": "Condiciones de uso",
+    "theme": {
+      "dark": "Noche",
+      "light": "Diurno",
+      "system": "Systema",
+      "title": "Thema"
+    },
+    "title": "Parámetros",
+    "version": "Versión",
+    "website": "Sitio web"
+  },
+  "welcome": "Bienvenidos en el sitio de l'app obytes"
+}

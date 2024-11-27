@@ -38,6 +38,7 @@ export default function TabLayout() {
           title: 'Home',
           tabBarIcon: ({ color }) => <FeedIcon color={color} />,
           headerRight: () => <CreateNewPostLink />,
+          headerLeft: () => <CreateGoLoginLink />,
           tabBarButtonTestID: 'home-tab',
         }}
       />
@@ -69,6 +70,16 @@ const CreateNewPostLink = () => {
     <Link href="/feed/add-post" asChild>
       <Pressable>
         <Text className="px-3 text-primary-300">Button Example</Text>
+      </Pressable>
+    </Link>
+  );
+};
+
+const CreateGoLoginLink = () => {
+  return (
+    <Link href="/login" asChild>
+      <Pressable>
+        <Text className="px-3 text-primary-300">Login Screen</Text>
       </Pressable>
     </Link>
   );

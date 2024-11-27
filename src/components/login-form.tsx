@@ -31,7 +31,7 @@ export type LoginFormProps = {
   signType?: 'signIn' | 'signUp'
 };
 
-export const LoginForm = ({ onSubmit = () => {}, loading, signType = 'signIn' }: LoginFormProps) => {
+export const LoginForm = ({ onSubmit = () => {}, loading }: LoginFormProps) => {
   const { handleSubmit, control } = useForm<FormType>({
     resolver: zodResolver(schema),
   });
@@ -81,8 +81,15 @@ export const LoginForm = ({ onSubmit = () => {}, loading, signType = 'signIn' }:
         <Button
           loading={loading}
           testID="login-button"
-          label={signType === 'signIn' ? "Login" : 'signUp'}
+          label="Login"
           onPress={handleSubmit(onSubmit)}
+        />
+        <Button
+          loading={loading}
+          testID="login-button"
+          label="Sign Up"
+          onPress={handleSubmit(onSubmit)}
+          variant="outline"
         />
       </View>
     </KeyboardAvoidingView>

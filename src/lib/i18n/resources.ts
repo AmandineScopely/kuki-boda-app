@@ -1,5 +1,7 @@
 import ar from '@/translations/ar.json';
 import en from '@/translations/en.json';
+import es from '@/translations/es.json';
+import fr from '@/translations/fr.json';
 
 export const resources = {
   en: {
@@ -7,6 +9,12 @@ export const resources = {
   },
   ar: {
     translation: ar,
+  },
+  es: {
+    translation: es,
+  },
+  fr: {
+    translation: fr,
   },
 };
 

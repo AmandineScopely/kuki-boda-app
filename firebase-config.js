@@ -11,7 +11,7 @@ import { getFirestore } from 'firebase/firestore';
 
 // Initialize Firebase
 export const firebaseConfig = {
-  apiKey: process.env.FIREBASE_API_KEY,
+  apiKey: 'AIzaSyAlYRLHtg5RrCwBvqE4lNUixIJr5IIAnmk',
   authDomain: 'kuki-boda.firebaseapp.com',
   databaseURL: 'https://kuki-boda.firebaseio.com',
   projectId: 'kuki-boda',
@@ -21,7 +21,7 @@ export const firebaseConfig = {
   //measurementId: 'G-measurement-id',
 };
 
-export const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig, 'defaultApp');
 // For more information on how to access Firebase in your project,
 // see the Firebase documentation: https://firebase.google.com/docs/web/setup#access-firebase
 

@@ -14,7 +14,7 @@ import {
   View,
 } from '@/components/ui';
 import { Github, Rate, Share, Support, Website } from '@/components/ui/icons';
-import { translate, useAuth } from '@/lib';
+import { signOutWithFirebase, translate, useAuth } from '@/lib';
 
 export default function Settings() {
   const signOut = useAuth.use.signOut();
@@ -75,7 +75,10 @@ export default function Settings() {
 
           <View className="my-8">
             <ItemsContainer>
-              <Item text="settings.logout" onPress={signOut} />
+              <Item text="settings.logout" onPress={() => {
+                signOut();
+                signOutWithFirebase();
+                }} />
             </ItemsContainer>
           </View>
         </View>
