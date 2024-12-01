@@ -1,14 +1,12 @@
 import { router } from 'expo-router';
-//import noviasImage from '../assets/motivo_floral.jpg'
 import { useColorScheme } from 'nativewind';
 import React from 'react';
-import { Dimensions, SafeAreaView, StyleSheet } from 'react-native'
+import { Dimensions, ImageBackground, SafeAreaView, StyleSheet } from 'react-native'
 
 import Bubble from '@/components/bubble';
 import { colors, FocusAwareStatusBar, Text, View } from '@/components/ui';
 //import colors from '@/constants/colors';
 import { HOME_ICONS_DATA, type HomeIconsType, LANGUAGE } from '@/constants/home-icons-data';
-
 
 
 const windowWidth = Dimensions.get('window').width;
@@ -42,7 +40,7 @@ export default function App() {
   return (
     <View className='flex-1'>
       <FocusAwareStatusBar />
-      {/*<ImageBackground source={noviasImage} resizeMode='cover' className='flex-1'>*/}
+      <ImageBackground source={require('../../../assets/motivo_floral.jpg')} resizeMode='cover' className='flex-1'>
           <SafeAreaView className='relative h-full text-center'>
             {/*<TouchableOpacity 
               className='justify-center m-auto' 
@@ -72,7 +70,7 @@ export default function App() {
                </View>
             </View>
           </SafeAreaView>
-      {/*</ImageBackground>*/}
+      </ImageBackground>
     </View>
   )
 }
