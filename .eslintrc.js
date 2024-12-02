@@ -81,7 +81,7 @@ module.exports = {
         'i18n-json/identical-keys': [
           2,
           {
-            filePath: path.resolve('./src/translations/en.json'),
+            filePath: path.resolve('./src/translations/fr.json'),
           },
         ],
         'prettier/prettier': [

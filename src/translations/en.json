@@ -1,12 +1,17 @@
 {
+  "navigator": {
+    "home": "Home",
+    "settings": "Settings",
+    "style": "Style"
+  },
   "onboarding": {
     "message": "Welcome to obytes app site"
   },
   "settings": {
     "about": "About",
     "app_name": "App Name",
-    "arabic": "Arabic",
     "english": "English",
+    "french": "French",
     "generale": "General",
     "github": "Github",
     "language": "Language",
@@ -16,6 +21,7 @@
     "privacy": "Privacy Policy",
     "rate": "Rate",
     "share": "Share",
+    "spanish": "Spanish",
     "support": "Support",
     "support_us": "Support Us",
     "terms": "Terms of Service",
@@ -28,6 +34,16 @@
     "title": "Settings",
     "version": "Version",
     "website": "Website"
+  },
+  "tabs": {
+    "activities": "Activities",
+    "allergies": "Allergies",
+    "blog": "Blog",
+    "confirm": "Confirm attendance",
+    "date": "Date",
+    "dresscode": "Dress Code",
+    "us": "Our story",
+    "venue": "Venue"
   },
   "welcome": "Welcome to obytes app site"
 }

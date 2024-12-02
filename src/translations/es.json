@@ -1,0 +1,49 @@
+{
+  "navigator": {
+    "home": "Inicio",
+    "settings": "Parámetros",
+    "style": "Estilo"
+  },
+  "onboarding": {
+    "message": "Bienvenidos en kuki-boda-app"
+  },
+  "settings": {
+    "about": "Acerca",
+    "app_name": "Nombre de la Applicación",
+    "english": "Inglés",
+    "french": "Francés",
+    "generale": "General",
+    "github": "Github",
+    "language": "Idioma",
+    "links": "Enlaces",
+    "logout": "Desconnexión",
+    "more": "Más",
+    "privacy": "Política de Privacidad",
+    "rate": "Evaluar",
+    "share": "Compartir",
+    "spanish": "Español",
+    "support": "Soportar",
+    "support_us": "Apóyanos",
+    "terms": "Condiciones de uso",
+    "theme": {
+      "dark": "Noche",
+      "light": "Claro",
+      "system": "Systema",
+      "title": "Thema"
+    },
+    "title": "Parámetros",
+    "version": "Versión",
+    "website": "Sitio Web"
+  },
+  "tabs": {
+    "activities": "Actividades",
+    "allergies": "Alergias",
+    "blog": "Blog",
+    "confirm": "Confirmar assistencia",
+    "date": "Fecha",
+    "dresscode": "Código de vestimenta",
+    "us": "Nuestra historia",
+    "venue": "Lugar"
+  },
+  "welcome": "Bienvenid@s a kuki-boda-app"
+}

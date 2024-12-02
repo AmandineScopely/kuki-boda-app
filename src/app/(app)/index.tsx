@@ -6,7 +6,8 @@ import { Dimensions, ImageBackground, SafeAreaView, StyleSheet } from 'react-nat
 import Bubble from '@/components/bubble';
 import { colors, FocusAwareStatusBar, Text, View } from '@/components/ui';
 //import colors from '@/constants/colors';
-import { HOME_ICONS_DATA, type HomeIconsType, LANGUAGE } from '@/constants/home-icons-data';
+import { HOME_ICONS_DATA, type HomeIconsType } from '@/constants/home-icons-data';
+import { translate, type TxKeyPath } from '@/lib';
 
 
 const windowWidth = Dimensions.get('window').width;
@@ -23,17 +24,6 @@ const bubblePosition = (i: number) => {
 }
 
 export default function App() {
-  //const { data, isPending, isError } = usePosts();
-
-  /*if (isError) {
-    return (
-      <View>
-        <Text> Error Loading data </Text>
-      </View>
-    );
-  }*/
-
-
   const colorScheme: 'light' | 'dark' | undefined = useColorScheme().colorScheme;
   const styles = styling(colorScheme);
 
@@ -57,7 +47,7 @@ export default function App() {
                 onPress={() => {
                   router.push(`/${value.slug}` as const); // Type assertion for TypeScript
                 }}
-                title={`${LANGUAGE === 'ES' ? value.title_ES : value.title_FR}`}
+                title={`${translate('tabs.'+value.slug as TxKeyPath)}` /*value.title_ES : value.title_FR*/}
               />
                ))}
                <View style={styles.central}>

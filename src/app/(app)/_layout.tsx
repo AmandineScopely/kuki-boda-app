@@ -8,7 +8,7 @@ import {
   Settings as SettingsIcon,
   Style as StyleIcon,
 } from '@/components/ui/icons';
-import { useAuth, useIsFirstTime } from '@/lib';
+import {translate, useAuth, useIsFirstTime } from '@/lib';
 
 export default function TabLayout() {
   const status = useAuth.use.status();
@@ -35,7 +35,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: translate("navigator.home"),
           tabBarIcon: ({ color }) => <FeedIcon color={color} />,
           headerRight: () => <CreateNewPostLink />,
           tabBarButtonTestID: 'home-tab',
@@ -45,7 +45,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="style"
         options={{
-          title: 'Style',
+          title: translate("navigator.style"),
           headerShown: false,
           tabBarIcon: ({ color }) => <StyleIcon color={color} />,
           tabBarButtonTestID: 'style-tab',
@@ -54,7 +54,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="settings"
         options={{
-          title: 'Settings',
+          title: translate("navigator.settings"),
           headerShown: false,
           tabBarIcon: ({ color }) => <SettingsIcon color={color} />,
           tabBarButtonTestID: 'settings-tab',
