@@ -1,0 +1,49 @@
+{
+  "navigator": {
+    "home": "Accueil",
+    "settings": "Paramètres",
+    "style": "Style"
+  },
+  "onboarding": {
+    "message": "Bienvenue sur le site kuki-boda-app"
+  },
+  "settings": {
+    "about": "À propos",
+    "app_name": "Nom de l'application",
+    "english": "Anglais",
+    "french": "Français",
+    "generale": "Général",
+    "github": "Github",
+    "language": "Langue",
+    "links": "Liens",
+    "logout": "Déconnexion",
+    "more": "plus",
+    "privacy": "Politique de confidentialité",
+    "rate": "Évaluer",
+    "share": "Partager",
+    "spanish": "Espagnol",
+    "support": "Soutenir",
+    "support_us": "Supportez-nous",
+    "terms": "Conditions générales",
+    "theme": {
+      "dark": "Nuit",
+      "light": "Jour",
+      "system": "Système",
+      "title": "Thème"
+    },
+    "title": "Paramètres",
+    "version": "Version",
+    "website": "Site internet"
+  },
+  "tabs": {
+    "activities": "Activités",
+    "allergies": "Allergies",
+    "blog": "Blog",
+    "confirm": "RSVP",
+    "date": "Date",
+    "dresscode": "Dress Code",
+    "us": "Notre histoire",
+    "venue": "Lieu"
+  },
+  "welcome": "Bienvenue sur le site kuki-boda-app"
+}

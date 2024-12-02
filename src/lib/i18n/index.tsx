@@ -10,7 +10,7 @@ export * from './utils';
 i18n.use(initReactI18next).init({
   resources,
   lng: getLanguage() || locale, // TODO: if you are not supporting multiple languages or languages with multiple directions you can set the default value to `en`
-  fallbackLng: 'en',
+  fallbackLng: 'fr',
   compatibilityJSON: 'v3', // By default React Native projects does not support Intl
 
   // allows integrating dynamic values into translations.

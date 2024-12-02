@@ -5,13 +5,9 @@ import React from 'react';
 import { colors } from '@/components/ui';
 //import { MaterialCommunityIcons, MaterialIcons } from '@expo/vector-icons';
 //import FontAwesome6 from '@expo/vector-icons/FontAwesome6';
-import { HOME_ICONS_DATA, type HomeIconsType, LANGUAGE } from '@/constants/home-icons-data';
+import { HOME_ICONS_DATA, type HomeIconsType } from '@/constants/home-icons-data';
+import { translate, type TxKeyPath } from '@/lib';
 
-
-const getTabLabel = (slug: string, language: string): string => {
-    const iconData = HOME_ICONS_DATA.find((item: HomeIconsType) => item.slug === slug) || { title_ES: '', title_FR: ''};
-    return language === 'ES' ? iconData?.title_ES : iconData?.title_FR;
-  };
 
 const TabsLayout = () => {
     const hiddenTabbarButtons: string[] = ['dresscode', 'blog'];
@@ -32,7 +28,7 @@ const TabsLayout = () => {
                 key={item.slug}
                 name={item.slug}
                 options={{
-                    tabBarLabel: getTabLabel(item.slug, LANGUAGE),
+                    tabBarLabel: translate("tabs." + item.slug as TxKeyPath),
                     tabBarIcon: ({ color }) => (
                         <IconComponent name={item.iconName} size={24} color={color} />
                     ),
